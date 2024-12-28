@@ -1,4 +1,4 @@
-# Telecom Data Analysis Project
+# AlphaCare-Insurance-Solutions-(ACIS)-Insurance-Claim-Data Analysis Project
 
 This project focuses on analyzing telecom data stored in a PostgreSQL database. It covers tasks such as user overview analysis, user engagement analysis, and visualization of the insights. The analysis results help derive actionable insights into customer behavior and network performance.
 
