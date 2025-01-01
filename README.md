@@ -1,6 +1,6 @@
 # AlphaCare-Insurance-Solutions-(ACIS)-Insurance-Claim-Data Analysis Project
 
-This project focuses on analyzing telecom data stored in a PostgreSQL database. It covers tasks such as user overview analysis, user engagement analysis, and visualization of the insights. The analysis results help derive actionable insights into customer behavior and network performance.
+This project involves a comprehensive analysis of insurance claim data using Data Version Control (DVC) and Exploratory Data Analysis (EDA) techniques.
 
 ---
 
@@ -35,8 +35,8 @@ project/
 ### **1. Clone the Repository**
 
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone <https://github.com/gtnt-sileshi/AlphaCare-Insurance-Solutions--ACIS--Insurance-Claim-Data-Analysis>
+cd <AlphaCare-Insurance-Solutions--ACIS--Insurance-Claim-Data-Analysis>
 ```
 
 ### **2. Install Required Libraries**
@@ -47,75 +47,44 @@ Use the `requirements.txt` file to install the necessary Python libraries.
 pip install -r requirements.txt
 ```
 
-### **3. Configure Database Connection**
+````
 
-Create a `.env` file in the project root directory and add your database credentials:
-
-```dotenv
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME=database_name
-DB_USER=your_username
-DB_PASSWORD=your_password
-```
-
-### **4. Run Jupyter Notebooks**
+### **3. Run Jupyter Notebooks**
 
 Start Jupyter Notebook and open the respective tasks:
 
 ```bash
 jupyter notebook
-```
+````
 
 ---
 
 ## **Usage**
 
-### **Task 1: User Overview Analysis**
+Overview
+This project aims to analyze insurance data to derive insights and perform data management using DVC. The analysis includes data loading, basic statistics, and visualizations.
 
-This task analyzes the top handsets and manufacturers used by customers.
-
-1. Open `notebooks/task1_user_overview.ipynb`.
-2. Run the cells to:
-   - Query the top 10 handsets.
-   - Analyze the top manufacturers.
-   - Visualize the distribution of handsets and manufacturers.
-
-### **Task 2: User Engagement Analysis**
-
-This task explores user engagement metrics and clusters users based on their activity.
-
-1. Open `notebooks/task2_user_engagement.ipynb`.
-2. Run the cells to:
-   - Query engagement metrics (e.g., session frequency, total duration).
-   - Perform univariate and bivariate analysis.
-   - Apply clustering to segment users.
-
----
-
-## **Features**
-
-- **Database Integration**: Uses PostgreSQL to store and query telecom data.
-- **Modular Scripts**: Reusable Python modules for data extraction and analysis.
-- **Data Visualization**: Visualizations using Matplotlib and Seaborn.
-- **Clustering**: K-means clustering for user segmentation.
-
----
-
-## **Requirements**
-
-- Python 3.8+
-- PostgreSQL
-- Python libraries:
-  - pandas
-  - SQLAlchemy
-  - psycopg2
-  - matplotlib
-  - seaborn
-  - scikit-learn
-  - python-dotenv
-
----
+Technologies Used
+Python
+Pandas
+Matplotlib
+DVC (Data Version Control)
+Data Preparation
+The dataset MachineLearningRating_v3.txt is loaded.
+Non-numeric columns are identified and excluded for numerical operations.
+The TransactionMonth column is converted to datetime format.
+DVC Implementation
+Remote storage was initialized for data management.
+The dataset was tracked and pushed to remote storage.
+Exploratory Data Analysis
+Basic statistics were performed on the dataset.
+Histograms, correlation matrices, and boxplots were created to visualize data distributions and relationships.
+Visualizations
+Histograms for TotalPremium.
+Correlation matrices to show relationships between variables.
+Boxplots for TotalPremium by Province.
+Conclusion
+The project successfully demonstrates how to manage and analyze insurance data using DVC and EDA techniques, providing valuable insights into the dataset.
 
 ## **Contributing**
 
