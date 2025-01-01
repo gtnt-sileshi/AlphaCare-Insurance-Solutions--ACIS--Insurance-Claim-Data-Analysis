@@ -2,4 +2,7 @@ pandas
 matplotlib
 seaborn
 dvc
+sklearn
+xgboost
+shap
 nbconvert
